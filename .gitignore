@@ -1,23 +1,6 @@
 .circleci
 .DS_Store
 /dist
- 
-# node_modules
-node_modules/*
-!/node_modules
-/node_modules/*
-
-# micromustache .d.ts file
-!/node_modules/micromustache
-/node_modules/micromustache/*
-!/node_modules/micromustache/index.d.ts
-
-# vue-google-maps .d.ts file
-!/node_modules/vue2-google-maps
-/node_modules/vue2-google-maps/*
-!/node_modules/vue2-google-maps/dist
-/node_modules/vue2-google-maps/dist/*
-!/node_modules/vue2-google-maps/dist/main.d.ts
 
 # local env files
 .env.local
@@ -35,7 +18,6 @@ logs/
 *.ntvs*
 *.njsproj
 *.sln
-*.sw*
 
 # Folder added by VS
 .vs/
