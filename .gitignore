@@ -18,6 +18,7 @@ logs/
 *.ntvs*
 *.njsproj
 *.sln
+*.sw*
 
 # Folder added by VS
 .vs/
