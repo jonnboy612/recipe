@@ -1,8 +1,8 @@
 CREATE TABLE IF NOT EXISTS ingredients (
-   `id` 								  BIGINT AUTO_INCREMENT
-	,`recipe_id` 						BIGINT NOT NULL
-	,`name` 								TEXT
-  ,`quantity` 						TEXT
+   `id` 							BIGINT AUTO_INCREMENT
+	,`recipe_id` 					BIGINT NOT NULL
+	,`name` 						TEXT
+  	,`quantity` 					TEXT
 	,`created_by` 					BIGINT NOT NULL DEFAULT 1
 	,`created_date` 				DATETIME DEFAULT CURRENT_TIMESTAMP
 	,`updated_by` 					BIGINT NOT NULL DEFAULT 1
