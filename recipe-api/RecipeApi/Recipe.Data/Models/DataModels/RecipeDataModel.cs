@@ -19,4 +19,6 @@ public class RecipeDataModel : EntityDataModel
     /// 
     /// </summary>
     public virtual List<StepDataModel> Steps { get; set; } = new List<StepDataModel>();
+
+    public virtual List<RatingDataModel> Rating { get; set;} = new List<RatingDataModel>();
 }

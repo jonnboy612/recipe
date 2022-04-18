@@ -12,4 +12,6 @@ public class RecipeViewModel {
   public List<IngredientViewModel> Ingredients { get; set; } = new List<IngredientViewModel>();
 
   public List<StepViewModel> Steps { get; set; } = new List<StepViewModel>();
+
+  public List<RatingViewModel> Rating { get; set; } = new List<RatingViewModel>();
 }

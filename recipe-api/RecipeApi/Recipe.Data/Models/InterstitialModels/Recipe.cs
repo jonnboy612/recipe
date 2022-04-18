@@ -9,4 +9,6 @@ public class Recipe : Entity {
 
   public List<Ingredient> Ingredients { get; set; } = new List<Ingredient>();
   public List<Step> Steps { get; set; } = new List<Step>();
+
+  public List<Rating> Ratings { get; set; } = new List<Rating>();
 }
