@@ -37,3 +37,5 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+recipe-api/notes
+recipe_workspace.code-workspace
