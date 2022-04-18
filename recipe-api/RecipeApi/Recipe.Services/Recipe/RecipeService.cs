@@ -18,6 +18,7 @@ public class RecipeService : IRecipeService
     /// </summary>
     private readonly IMapper _mapper;
 
+
     public RecipeService([NotNull] IDataService dataService,
                          [NotNull] IMapper mapper)
     {
