@@ -23,5 +23,11 @@ public class RecipeMappingProfile : Profile
 
         CreateMap<StepViewModel, Step>();
         CreateMap<Step, StepViewModel>();
+
+        CreateMap<UserDataModel, User>();
+        CreateMap<User, UserDataModel>();
+
+        CreateMap<UserViewModel, User>();
+        CreateMap<User, UserViewModel>();
     }
 }
