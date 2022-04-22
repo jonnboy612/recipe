@@ -52,11 +52,7 @@ public class RatingController : ControllerBase
             var ratingModel = _mapper.Map<Rating>(rating);
             var savedRating = _ratingService.Create(ratingModel);
             
-            var avgList = new List<int>(){rating.ratingAvg};
-            double avgRating = avgList.Average();
-
-            //update 
-            var savedAvg = _ratingService.Update();
+            var ratingList = _ratingService.Get().Average();
      
             return Ok(_mapper.Map<RatingViewModel>(savedRating));
         }

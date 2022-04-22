@@ -53,20 +53,23 @@ public class RatingService : IRatingService
     public Rating Create(Rating rating)
     {
         var ratingDataModel = _mapper.Map<RatingDataModel>(rating); 
+
         _dataService.Insert(ratingDataModel);
         _dataService.Save();
         
+        ratingDataModel.ratingAvg = ratingList;
 
         return _mapper.Map<Rating>(ratingDataModel);
     }
 
     public Rating Update(Rating rating)
     {
-        var ratingDataModel = _dataService.Get<RatingDataModel>(rating.ratingAvg);
-        // if (ratingDataModel == null)
-        // {
-        //     throw new NullReferenceException($"no rating found{rating.Id}");
-        // }
+        var ratingDataModel = _dataService.Get<RatingDataModel>();
+
+        if (ratingDataModel == null)
+        {
+            throw new NullReferenceException($"no rating found{rating.Id}");
+        }
         
         ratingDataModel = _mapper.Map(rating, ratingDataModel);
         _dataService.Save();
